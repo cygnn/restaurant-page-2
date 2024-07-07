@@ -1,0 +1,59 @@
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+    border: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.button-div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+#content{
+    height: 100%;
+}
+
+.home-content{
+    display: flex;;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    width: 40%;
+}
+
+.desc{
+    margin-bottom: 2rem;
+}
+
+.right-side{
+    height: 60%;
+    margin-top: 3rem;
+}
