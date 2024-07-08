@@ -57,3 +57,86 @@ button{
     height: 60%;
     margin-top: 3rem;
 }
+
+footer{
+    display: flex;
+    z-index: 10;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.footer-content{
+    width: 25%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.footer-title{
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+}
+
+.sub-title{
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.time{
+    margin: 0.5rem 0 1rem 0;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-subtitle{
+    
+}
+
+.main-menu{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.menu-card{
+    display: flex;
+    width: 50%;
+    
+}
+
+.menu-image{
+    width: 80px;
+    height: 80px;
+}
+
+.menu-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu-div{
+    padding: 0 1.5rem;
+    width: 100%;
+}
+
+.menu-desc{
+    margin-top: 0.5rem;
+}

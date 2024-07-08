@@ -1,5 +1,6 @@
 import logoImg from '../imgs/logo.png';
 import { loadHome } from './loadHome';
+import { loadMenu } from './loadMenu';
 export default function initialLoad(){
     const header = document.querySelector('header');
     const nav = document.createElement('nav');
@@ -40,11 +41,15 @@ export default function initialLoad(){
     header.appendChild(nav);
 
     home.addEventListener('click', loadHome);
+    menu.addEventListener('click', loadMenu);
 
     const footer = document.createElement('footer');
     const div1 = document.createElement('div');
+    div1.classList.add('footer-content')
     const div2 = document.createElement('div');
+    div2.classList.add('footer-content')
     const div3 = document.createElement('div');
+    div3.classList.add('footer-content')
 
     const footerCompany = document.createElement('h4')
     footerCompany.classList.add('footer-title');
@@ -82,10 +87,36 @@ export default function initialLoad(){
 
     const icons = document.createElement('div');
     icons.classList.add('icons');
+
+    const opening = document.createElement('h4')
+    opening.classList.add('footer-title');
+    opening.textContent = 'Opening';
+    div3.appendChild(opening);
+
+    const date1 = document.createElement('h5');
+    date1.classList.add('sub-title');
+    date1.textContent = 'Monday - Saturday';
+    div3.appendChild(date1);
+
+    const time1 = document.createElement('p');
+    time1.classList.add('time');
+    time1.textContent = '9AM - 9PM';
+    div3.appendChild(time1);
+
+    const date2 = document.createElement('h5');
+    date2.classList.add('sub-title');
+    date2.textContent = 'Sunday';
+    div3.appendChild(date2);
+
+    const time2 = document.createElement('p');
+    time2.classList.add('time');
+    time2.textContent = '10AM - 10PM';
+    div3.appendChild(time2);
     
 
     footer.appendChild(div1);
     footer.appendChild(div2);
+    footer.appendChild(div3);
     const body = document.querySelector('body');
     body.appendChild(footer);
 
