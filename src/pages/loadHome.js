@@ -1,9 +1,12 @@
 import homeImg from '../imgs/home-img.png'
 export function loadHome(){
-    const content = document.querySelector('#content');
+    const content = document.querySelector('#content')
+    while (content.hasChildNodes()){
+        content.removeChild(content.firstChild);
+    }
 
     const homeContent = document.createElement('div');
-    homeContent.classList.add('home-content');
+    homeContent.classList.add('hero-content');
 
     const leftside = document.createElement('div');
     leftside.classList.add('left-side');

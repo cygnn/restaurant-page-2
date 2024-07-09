@@ -60,6 +60,7 @@ button{
 
 footer{
     display: flex;
+    justify-content: center;
     z-index: 10;
     width: 100%;
     margin-top: 3rem;
@@ -139,4 +140,45 @@ footer{
 
 .menu-desc{
     margin-top: 0.5rem;
+}
+
+.about-content{
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+.img-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    padding: 0 1.5rem;
+}
+
+.about-img{
+    display: flex;
+    aspect-ratio: 1/1;
+    max-width: 90%;
+}
+
+.text-content{
+    width: 50%;
+    padding: 0 1.5rem;
+}
+
+.section-title{
+    margin: 0 0 0.5rem 0;
+}
+
+.welcome{
+    margin: 0 0 1.5rem 0;
+}
+
+.subtext{
+    margin: 0 0 1.5rem 0;
+    width: 60%;
 }

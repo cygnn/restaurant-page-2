@@ -1,4 +1,5 @@
 import logoImg from '../imgs/logo.png';
+import { loadAbout } from './loadAbout';
 import { loadHome } from './loadHome';
 import { loadMenu } from './loadMenu';
 export default function initialLoad(){
@@ -40,8 +41,11 @@ export default function initialLoad(){
     nav.appendChild(buttonDiv);
     header.appendChild(nav);
 
+    //EVENT LISTENERS;
     home.addEventListener('click', loadHome);
     menu.addEventListener('click', loadMenu);
+    about.addEventListener('click', loadAbout);
+    loadHome();
 
     const footer = document.createElement('footer');
     const div1 = document.createElement('div');

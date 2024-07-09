@@ -6,7 +6,10 @@ import img5 from '../imgs/squid.jpg';
 import img6 from '../imgs/sisig.jpg';
 
 export function loadMenu(){
-    const content = document.querySelector('#content');
+    const content = document.querySelector('#content')
+    while (content.hasChildNodes()){
+        content.removeChild(content.firstChild);
+    }
 
     const menuContent = document.createElement('div');
     menuContent.classList.add('menu-content');
@@ -15,7 +18,7 @@ export function loadMenu(){
     heroContent.classList.add('hero-content');
 
     const menuTitle = document.createElement('h1');
-    menuTitle.classList.add('menu-title');
+    menuTitle.classList.add('title');
     menuTitle.textContent = 'Food Menu';
     heroContent.appendChild(menuTitle);
     menuContent.appendChild(heroContent);
