@@ -5,8 +5,8 @@ export function loadHome(){
         content.removeChild(content.firstChild);
     }
 
-    const homeContent = document.createElement('div');
-    homeContent.classList.add('hero-content');
+    const heroContent = document.createElement('div');
+    heroContent.classList.add('hero-content');
 
     const leftside = document.createElement('div');
     leftside.classList.add('left-side');
@@ -35,7 +35,11 @@ export function loadHome(){
 
     rightside.appendChild(img);
 
-    homeContent.appendChild(leftside);
-    homeContent.appendChild(rightside);
+    heroContent.appendChild(leftside);
+    heroContent.appendChild(rightside);
+
+    const homeContent = document.createElement('div');
+    homeContent.classList.add('home-content');
+    homeContent.appendChild(heroContent);
     content.appendChild(homeContent);
 }

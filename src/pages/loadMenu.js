@@ -57,7 +57,7 @@ export function loadMenu(){
         {
             name: "Grilled Squid",
             img: img5,
-            price: "250"
+            price: "P250"
         },
         {
             name: "Sizzling Pork Sisig",
@@ -83,6 +83,7 @@ export function loadMenu(){
         const itemName = document.createElement('span');
         itemName.textContent = item.name;
         const itemPrice = document.createElement('span');
+        itemPrice.classList.add('price');
         itemPrice.textContent = item.price;
 
         const menuDesc = document.createElement('p');
