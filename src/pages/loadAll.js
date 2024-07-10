@@ -2,7 +2,7 @@ import logoImg from '../imgs/logo.png';
 import { loadAbout } from './loadAbout';
 import { loadHome } from './loadHome';
 import { loadMenu } from './loadMenu';
-export default function initialLoad(){
+export default function loadAll(){
     const header = document.querySelector('header');
     const nav = document.createElement('nav');
     const brand = document.createElement('div');

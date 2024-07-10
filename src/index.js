@@ -1,4 +1,4 @@
 import './styles/page.css'
-import initialLoad from './pages/initialLoad';
+import loadAll from './pages/loadAll';
 
-initialLoad();
+loadAll();

@@ -5,6 +5,11 @@ body{
     margin: 0;
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -58,7 +63,7 @@ button{
 }
 
 #content{
-    height: 50rem;
+    height: 54.2rem;
 }
 
 .home-content{
